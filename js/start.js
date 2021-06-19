@@ -1,11 +1,44 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
-const endPoint = 7;
-const select = [0,0,0,0,0,0,0];
+const result = document.querySelector("#result")
+const endPoint = 16;
+const select = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 function calculateResult() {
     var result = select.indexOf(Math.max(...select));
     return result;
+}
+
+function showResult() {
+    let result = calculateResult();
+    const resultName = document.querySelector('.resultnpc');
+    console.log(result);
+    resultName.innerHTML = `당신은...${resultList[result].name}입니다!`;
+
+    var resultImg = document.createElement('img');
+    const imgSection= document.querySelector('.resultImage');
+    var imgURL = `../images/img-${result}.png`;
+    resultImg.src = imgURL;
+    resultImg.alt = result;
+    resultImg.classList.add('img-fluid');
+    imgSection.appendChild(resultImg);
+
+    const resultDesc = document.querySelector('.resultDesc');
+    resultDesc.innerHTML = resultList[result].desc;
+}
+
+function goResult() {
+    qna.style.WebKitAnimation = "fadeOut 1s";
+    qna.style.animation = "fadeOut 1s";
+    setTimeout(() => {
+        result.style.WebkitAnimation = "fadeIn 1s";
+        result.style.animation = "fadeIn 1s";
+        setTimeout(() => {
+            qna.style.display = "none";
+            result.style.display = "block";
+        },450);
+    },450);
+    showResult();
 }
 
 function begin() {
