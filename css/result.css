@@ -1,0 +1,33 @@
+#testresult {
+    display: none;
+    background-color: #FFF4D8;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#resultnpc {
+    color: #7E4E33;
+    font-weight: bold;
+}
+
+.retrybtn, .gohomebtn {
+    background-color: #95DEBD;
+    border-radius: 20px;
+    width: 50%;
+    font-weight: bold;
+}
+
+.kakaobtn {
+    background-color: #FFE600;
+    border-radius: 20px;
+    width: 50%;
+    font-weight: bold;
+}
+
+.retrybtn:hover, .retrybtn:focus, .gohomebtn:hover, .gohomebtn:focus {
+    background-color: #83B7A7;    
+}
+
+.kakaobtn:hover, .kakaobtn:focus {
+    background-color: #D49E13;
+}
