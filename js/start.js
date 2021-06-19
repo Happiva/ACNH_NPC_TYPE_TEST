@@ -31,6 +31,7 @@ function addAnswer(answerText, qIdx, idx) {
     answerBtn.classList.add('py-3');
     answerBtn.classList.add('mt-3');
     answerBtn.classList.add('mx-auto');
+    answerBtn.classList.add('my-auto');
     answerBtn.classList.add('fadeIn');
 
     answerBox.appendChild(answerBtn);
@@ -63,6 +64,8 @@ function goNext(qIdx) {
         return;
     }
     var qBox = document.querySelector('.qBox');
+    var qNum = document.querySelector('.qnum');
+    qNum.innerHTML = `Q ${qIdx+1}`;
     qBox.innerHTML = dataList[qIdx].q; //qBox에 data.js의 qna를 가져옴
     for(let i in dataList[qIdx].a) {
         addAnswer(dataList[qIdx].a[i].answer, qIdx, i);

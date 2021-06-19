@@ -3,11 +3,20 @@
 }
 
 .qBox {
+    text-align: center;
+    font-size : 24px;
+}
+
+.qSection {
+    width : 80%;
+    border-radius : 20px;
     background-color : #fff4d8;
     text-align : center;
-    border-radius : 20px;
+}
+
+.qnum {
+    text-align: center;
     font-size : 24px;
-    width : 80%;
 }
 
 .answerBox {
@@ -18,8 +27,10 @@
     height : 200px;
 }
 .answerList {
-    font-size : 25px;
-    width : 60%;
+    background-color : #fce7b1;
+    border-style: none;
+    font-size : 18px;
+    width : 85%;
 }
 
 .answerList:hover, .answerList:focus{
