@@ -22,12 +22,12 @@
 .answerBox {
     background-color : #fce7b1;
     text-align: center;
-    border-radius: 140px;
+    border-radius: 90px;
     width : 60%;
     height : 200px;
 }
 .answerList {
-    background-color : #fce7b1;
+    background-color : #fce7b100;
     border-style: none;
     font-size : 18px;
     width : 85%;
