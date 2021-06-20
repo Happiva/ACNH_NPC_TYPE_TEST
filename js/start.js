@@ -62,7 +62,6 @@ function addAnswer(answerText, qIdx, idx) {
     var answerBtn = document.createElement('button');
     answerBtn.classList.add('answerList');
     answerBtn.classList.add('py-3');
-    answerBtn.classList.add('mt-3');
     answerBtn.classList.add('mx-auto');
     answerBtn.classList.add('my-auto');
     answerBtn.classList.add('fadeIn');

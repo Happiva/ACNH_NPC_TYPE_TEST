@@ -7,4 +7,11 @@
 .startbtn {
     background-color: #95DEBD;
     color: black;
+    border-radius: 20px;
+    width: 50%;
+    font-weight: bold;
+}
+
+.startbtn:hover, .startbtn:focus {
+    background-color: #83B7A7;
 }

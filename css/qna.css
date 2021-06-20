@@ -25,6 +25,8 @@
     border-radius: 90px;
     width : 70%;
     height : 200px;
+    display: flex;
+    flex-direction: column;
 }
 .answerList {
     background-color : #fce7b100;
