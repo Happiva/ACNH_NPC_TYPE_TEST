@@ -104,3 +104,7 @@ function goNext(qIdx) {
     var status = document.querySelector('.statusBar');
     status.style.width = (100/endPoint) * (qIdx + 1) + '%';
 }
+
+function moveHome() {
+    location.href = "/index.html";
+}
