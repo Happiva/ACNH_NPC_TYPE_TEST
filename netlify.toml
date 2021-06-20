@@ -1,3 +1,5 @@
+// ./netlify.toml
+
 [context.production.environment]
     TOML_ENV_VAR = "From netlify.toml"
     API_KEY_TOML_ENV_VAR = "From netlify.toml (API_KEY)
