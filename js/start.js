@@ -1,8 +1,8 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result")
-const endPoint = 16;
-const select = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+const endPoint = 21;
+const select = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 function calculateResult() {
     var result = select.indexOf(Math.max(...select));
