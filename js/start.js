@@ -12,7 +12,6 @@ function calculateResult() {
 function showResult() {
     let result = calculateResult();
     const resultName = document.querySelector('.resultnpc');
-
     resultName.innerHTML = `당신은...${resultList[result].name}입니다!`;
 
     var resultImg = document.createElement('img');
